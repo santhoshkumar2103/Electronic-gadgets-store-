@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics Store</title>
+    <link rel="stylesheet" href="Main.css" />
+
+    <!-- Css Styles Starts Here -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .main-container {
+        text-align: center;
+        color: #fff;
+      }
+
+      .main-title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .card {
+        background: #ffffff;
+        color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .card button {
+        font-size: 1rem;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .card button:hover {
+        background-color: #388e3c;
+      }
+      .card:hover {
+        background-color: #3333338d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="main-title">Explore Electronic Gadgets</h1>
+      <div class="card-container">
+        <div class="card">
+          <h2>Mobile Phones</h2>
+          <button
+            onclick="redirectToProduct('https://www.flipkart.com/search?q=Mobile+phones&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off')"
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <h2>Laptops</h2>
+          <button
+            onclick="redirectToProduct('https://www.flipkart.com/search?q=Laptop%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off')"
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <h2>Desktops</h2>
+          <button
+            onclick="redirectToProduct('https://www.flipkart.com/search?q=Desktop&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off')"
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <h2>Tablets</h2>
+          <button
+            onclick="redirectToProduct('https://www.flipkart.com/search?q=Tablets&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off')"
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <h2>Smart Watches</h2>
+          <button
+            onclick="redirectToProduct('https://www.flipkart.com/search?q=Smart%20watch&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off')"
+          >
+            View Details
+          </button>
+        </div>
+        <div class="card">
+          <h2>AirPods</h2>
+          <button
+            onclick="redirectToProduct('https://www.flipkart.com/search?q=Airpods&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off')"
+          >
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Starts Here -->
+    <script>
+      function redirectToProduct(productPage) {
+        window.open(productPage, "_blank");
+      }
+    </script>
+  </body>
+</html>
